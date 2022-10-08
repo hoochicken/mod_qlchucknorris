@@ -11,13 +11,14 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>mareike.riegel@ql.de</authorEmail>
 	<authorUrl>ql.de</authorUrl>
-	<version>1.0</version>
+	<version>1.1.0</version>
 	<description>MOD_QLCHUCKNORRIS_XML_DESCRIPTION</description>
 	<updateservers>
-        <server type="extension" priority="1" name="qlchucknorris - Updates"><![CDATA[https://www.blackforest-software.com/_scripts/updates/mod_qlchucknorris.xml]]></server>
+        <server type="extension" priority="1" name="qlchucknorris - Updates">https://raw.githubusercontent.com/hoochicken/mod_qlchucknorris/main/_jupdate/mod_qlchucknorris.xml</server>
     </updateservers>
 	<files>
 		<filename module="mod_qlchucknorris">mod_qlchucknorris.php</filename>
+		<folder>_jupdate</folder>
 		<folder>css</folder>
 		<folder>js</folder>
 		<folder>language</folder>
