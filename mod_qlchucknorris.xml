@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.x"
+	client="site"
+	method="upgrade">
+	<name>qlchucknorris</name>
+	<author>Mareike Riegel</author>
+	<creationDate>2019-03-15</creationDate>
+	<copyright>ql.de</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>mareike.riegel@ql.de</authorEmail>
+	<authorUrl>ql.de</authorUrl>
+	<version>1.0</version>
+	<description>MOD_QLCHUCKNORRIS_XML_DESCRIPTION</description>
+	<updateservers>
+        <server type="extension" priority="1" name="qlchucknorris - Updates"><![CDATA[https://www.blackforest-software.com/_scripts/updates/mod_qlchucknorris.xml]]></server>
+    </updateservers>
+	<files>
+		<filename module="mod_qlchucknorris">mod_qlchucknorris.php</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>php</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_qlchucknorris.xml</filename>
+	</files>
+	<media folder="media" destination="mod_qlchucknorris">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_qlchucknorris.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_qlchucknorris.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_qlchucknorris.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_qlchucknorris.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_qlchucknorris/php/fields" addrulepath="/modules/mod_qlchucknorris/php/rules">
+            <fieldset name="basic">
+				<field name="source" type="list" label="MOD_QLCHUCKNORRIS_SOURCE_LABEL" description="MOD_QLCHUCKNORRIS_SOURCE_DESC">
+					<option value="0">MOD_QLCHUCKNORRIS_DEFAULT</option>
+					<option value="1">MOD_QLCHUCKNORRIS_TEXT</option>
+					<option value="2">MOD_QLCHUCKNORRIS_ARTICLES</option>
+				</field>
+				<field name="text" type="textarea" label="MOD_QLCHUCKNORRIS_TEXT_LABEL" description="MOD_QLCHUCKNORRIS_TEXT_DESC" />
+				<field name="buttons" type="textarea" label="MOD_QLCHUCKNORRIS_BUTTONS_LABEL" description="MOD_QLCHUCKNORRIS_BUTTONS_DESC" />
+				<field name="articles" type="text" filter="integer" label="MOD_QLCHUCKNORRIS_ARTICLES_LABEL" description="MOD_QLCHUCKNORRIS_ARTICLES_DESC" />
+				<!--field name="articles" type="textarea" label="MOD_QLCHUCKNORRIS_ARTICLES_LABEL" description="MOD_QLCHUCKNORRIS_ARTICLES_DESC" /-->
+            </fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
