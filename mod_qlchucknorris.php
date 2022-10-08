@@ -1,7 +1,7 @@
 <?php
 /**
  * @package        mod_qlchucknorris
- * @copyright    Copyright (C) 2019 ql.de All rights reserved.
+ * @copyright    Copyright (C) 2022 ql.de All rights reserved.
  * @author        Mareike Riegel mareike.riegel@ql.de
  * @license        GNU General Public License version 2 or later; see LICENSE.txt
  */
@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 require_once dirname(__FILE__) . '/helper.php';
 $obj_helper = new modQlchucknorrisHelper($module, $params);
 
-$numSource= $params->get('source');;
+$numSource = $params->get('source');;
 
 if (1 == $numSource) {
     $strText = $obj_helper->getTextModule();
