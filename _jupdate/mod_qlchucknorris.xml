@@ -8,7 +8,7 @@
 		<description>qlchucknorris give 7-star low-kicks</description>
 		<infourl title="ql.de - Blackforest Software">https://ql.de</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/hoochicken/qlchucknorris/archive/refs/tags/v1.1.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/hoochicken/mod_qlchucknorris/archive/refs/tags/v1.1.0.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
