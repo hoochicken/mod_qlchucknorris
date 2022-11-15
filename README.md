@@ -1,5 +1,11 @@
 # mod_qlchucknorris
 
+## What about a roundhouse kick ...?
+
+I love coding. My extensions are for free. Wanna say thanks? You're welcome! 
+<https://www.buymeacoffee.com/mareikeRiegel>
+Otherwise, who knows, Mr. Norris might want to roundhousekick you ...
+
 ## In general
 
 This module places a "punch" button on the website. Clicking that button all texts of the very website are replaced by Chuck Norris facts.
